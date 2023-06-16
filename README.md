@@ -17,23 +17,21 @@ Roboger's Hood is fun application that will allow you change any numer into a fu
 
 Here are a List of test for the JavaScript below:
 
-Describe: returnBeep()
+Describe: pizza()
 
-Test: "it should replace the number 1 with the word beep"
-Code: function returnBeep(number) {
-  if (number === 1) {
-    return "beep";
-returnBeep(1);
-Expected Output: beep
-passed
+Test: "it should creat a constructor"
+Code: 
+Pizza();
+Expected Output: {
+  this.toppings = toppings; 
+  this.size = size;
+}
 
-Test: "it should replace any number with 1 in it with the word beep"
-Code:function returnBeep(number) {
-  if (number.toString().includes('1')) {
-    return "beep";
-returnBeep(716);
-Expected Output: beep
-passsed 
+Describe: totalCost 
+Test: "it shoudl create a prototype for calculatting total cost"
+Code: 
+Pizza.totalCost();
+Expected Output: undefined
 
 Describe: returnBoop()
 Test: "it should replace the number 2 with the word boop"
