@@ -33,14 +33,21 @@ Code:
 Pizza.totalCost();
 Expected Output: undefined
 
-Describe: returnBoop()
-Test: "it should replace the number 2 with the word boop"
-code: function returnBoop(number) {
-  if (number === 2) {
-    return "boop";
-returnBoop(2)
-Expected Output: boop 
-passed
+Test: "it should return the cost of a small pizza"
+code: 
+myPizza.totalCost()
+Expected Output: 10 
+
+Test: "it should return the cost of a medium pizza"
+code: 
+myPizza.totalCost()
+Expected Output: 15
+
+Test: "it should return the cost of a large pizza"
+code: 
+myPizza.totalCost()
+Expected Output: 20
+
 Test: "it should replace any number with 2 in it with the word boop"
 code: function returnBoop(number) {
   if (number.toString().includes('2')) {

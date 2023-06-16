@@ -10,7 +10,10 @@ Pizza.prototype.totalCost = function() {
   }
     else if (this.size === "medium"){
       baseCost = 15;
+    } else if (this.size === "large"){
+      baseCost = 20;
     }
+
   let totalCost = baseCost;
 
   return totalCost;
