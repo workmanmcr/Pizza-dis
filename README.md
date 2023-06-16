@@ -13,7 +13,7 @@
 ## Description 
 Get a Pizza Dis is an application developed to calculate the price of a pizza you want to order using a constructor function with prototype methods. this will allow you to pick any size pizza you want with a variety of toppings and give you the calcullated cost of the pizza. once you have selected your size and picked your toppings click on the "Total price" button to see your cost. 
 
-[GetaPizzaDIs](https://workmanmcr.github.io/Pizza-dis/)
+[GetaPizzaDis](https://workmanmcr.github.io/Pizza-dis/)
 
 Here are a List of test for the business logic below:
 
