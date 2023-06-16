@@ -39,12 +39,34 @@ Pizza.prototype.totalCost = function() {
 
   return totalCost;
 };
-const pizzaForm = document.getElementById("pizza-form");
-const sizeSelect = document.getElementById("size");
-const toppingCheckBox = document.querySelector('input[name="toppings"]');
-const resultDiv = document.getElementById("result");
+const pizzaForm = document.getElementById('pizza-form');
+const sizeSelect = document.getElementById('size');
+const toppingsCheckboxes = document.querySelectorAll('input[name="toppings"]');
+const resultDiv = document.getElementById('result');
 
-pizzaForm.addEventListener('submit', function(event)) {
-  event.preventDefault();
-}
+// Event listener for form submission
+pizzaForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Get selected size
+  const selectedSize = sizeSelect.value;
+
+  // Get selected toppings
+  const selectedToppings = [];
+  toppingsCheckboxes.forEach(function(checkbox) {
+    if (checkbox.checked) {
+      selectedToppings.push(checkbox.value);
+    }
+  });
+
+  // Create a new Pizza object
+  const pizza = new Pizza(selectedToppings, selectedSize);
+
+  // Calculate total cost
+  const totalCost = pizza.totalCost();
+
+  // Display the result
+  resultDiv.innerHTML = `Total Cost: $${totalCost}`;
+});
+  
 
