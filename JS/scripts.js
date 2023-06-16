@@ -39,3 +39,7 @@ Pizza.prototype.totalCost = function() {
 
   return totalCost;
 };
+const pizzaForm = document.getElementById("pizza-form");
+const sizeSelect = document.getElementById("size");
+const toppingCheckBox = document.querySelector('input[name="toppings"]');
+const resultDiv = document.getElementById("result")

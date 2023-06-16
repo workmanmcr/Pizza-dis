@@ -5,11 +5,14 @@
   <title>Get a Pizza Dis</title>
 </head>
 <body>
+  <h1>Welcome to Get a Pizza Dis</h1>
+  <p>We have a variety of sizes and toppings!</p>
+  <h2>Sorry! Limit 1 pizza per customer</h2>
   <form id="pizza-form">
     <label for="size">Pick your size</label>
     <select id="size">
-      <option value="small">Small, I'm Not so  Hungry</option>
-      <option value="medium">Medium, I could eat</option>
+      <option value="small">Small, I'm Not so Hungry.</option>
+      <option value="medium">Medium, I could eat.</option>
       <option value="large">large, I'm starving!</option>
     </select>
     <ul>
@@ -18,7 +21,8 @@
     <li><input type="checkbox" name="toppings" id="pepperoni">Some of that pepperoni!</li>
     <li><input type="checkbox" name="toppings" id="sausage"> All that sauasge!</li>
 </ul>
+<button type="submit">Total Price</button>
   </form>
-  
+  <div id="result"></div>
 </body>
 </html>
