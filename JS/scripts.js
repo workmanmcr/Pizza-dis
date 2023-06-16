@@ -4,8 +4,14 @@ function Pizza(toppings, size){
 }
 
 Pizza.prototype.totalCost = function() {
-  let baseCost; 
+  let baseCost = 0; 
   if (this.size === "small"){
     baseCost = 10;
   }
+    else if (this.size === "medium"){
+      baseCost = 15;
+    }
+  let totalCost = baseCost;
+
+  return totalCost;
 }
