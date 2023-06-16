@@ -19,9 +19,15 @@ Pizza.prototype.sizeCost = function() {
   return totalCost;
 }
 Pizza.prototype.toppingCost = function() {
-  let tCost = 0;
+  
   if (this.toppings === "cheese") {
-    tCost = 2;
+    baseCost = 2;
+  } else if (this.toppings === "peperoni") {
+    baseCost = 4;
+  } else if (this.topping === "suasage"){
+    baseCost =  6; 
   }
 
+  return baseCost;
 }
+Pizza.prototype.totalCost
