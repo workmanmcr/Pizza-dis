@@ -18,12 +18,15 @@ Pizza.prototype.sizeCost = function() {
 
 Pizza.prototype.toppingCost = function() {
   let baseCost = 0;
-  if (this.toppings === "cheese") {
-    baseCost = 2;
-  } else if (this.toppings === "pepperoni") {
-    baseCost = 4;
-  } else if (this.toppings === "sausage") {
-    baseCost = 6;
+  for (let i = 0; i < this.toppings.length; i++) {
+    let topping = this.toppings[i];
+    if (topping === "cheese") {
+      baseCost += 2;
+    } else if (topping === "pepperoni") {
+      baseCost += 4;
+    } else if (topping === "sausage") {
+      baseCost += 6;
+    }
   }
 
   return baseCost;

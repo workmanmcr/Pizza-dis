@@ -49,15 +49,32 @@ myPizza.sizeCost()
 Expected Output: 20
 
 Describe: toppingCost 
-Test: "it shoudl create a prototype for calculatting total cost per topping"
+Test: "it shoud create a prototype for calculating total cost per topping"
 Code: 
-Pizza.tCost();
-Expected Output: undefined
+Pizza.totalCost();
+Expected Output: 2
 
-Test: "it should return the cost of a large pizza"
-code: 
-myPizza.sizeCost()
+Test: "it shoud create a prototype for calculating total cost per topper"
+Code: 
+Pizza.totalCost();
+Expected Output: 4
+
+Test: "it shoud create a prototype for calculating total cost per topper"
+Code: 
+Pizza.totalCost();
+Expected Output: 6
+
+Describe: totalCost() 
+Test: "it shoud create a prototype for calculating total cost of pizza with size and toppings"
+Code: 
+Pizza.totalCost("cheese", "large");
 Expected Output: 20
+
+Test: "it shoud create a prototype for calculating total cost of pizza with size and multiple toppings"
+Code: 
+Pizza.totalCost("cheese", "peperoni" "large");
+Expected Output: 26
+
 
 
 ## Setup/Installation Requirements
