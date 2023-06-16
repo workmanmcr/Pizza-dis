@@ -3,7 +3,7 @@ function Pizza(toppings, size){
   this.size = size;
 }
 
-Pizza.prototype.totalCost = function() {
+Pizza.prototype.sizeCost = function() {
   let baseCost = 0; 
   if (this.size === "small"){
     baseCost = 10;
@@ -14,7 +14,14 @@ Pizza.prototype.totalCost = function() {
       baseCost = 20;
     }
 
-  let totalCost = baseCost;
+  let sizeCost = baseCost;
 
   return totalCost;
+}
+Pizza.prototype.toppingCost = function() {
+  let tCost = 0;
+  if (this.toppings === "cheese") {
+    tCost = 2;
+  }
+
 }
