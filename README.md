@@ -1,8 +1,8 @@
-# _{Roboger's Hood}_
+# _{Get a Pizza Dis}_
 
 #### By _**{Mike Workman}**_
 
-#### _{Roboger's Hood turns numbers into beeps and boops}_
+#### _{Get a Pizza Dis is a fast and simple way to order pizza}_
 
 ## Technologies Used
 
@@ -11,11 +11,11 @@
 * _JavaScript_
 
 ## Description 
-Roboger's Hood is fun application that will allow you change any numer into a fun string of predefined words and phrases by utilizing javascripts arrays and looping abilities. 
+Get a Pizza Dis is an application developed to calculate the price of a pizza you want to order using a constructor function with prototype methods. this will allow you to pick any size pizza you want with a variety of toppings and give you the calcullated cost of the pizza. once you have selected your size and picked your toppings click on the "Total price" button to see your cost. 
 
-[ROBOGER'S HOOD](https://workmanmcr.github.io/roboger-js/)
+[GetaPizzaDis](https://workmanmcr.github.io/Pizza-dis/)
 
-Here are a List of test for the JavaScript below:
+Here are a List of test for the business logic below:
 
 Describe: pizza()
 
@@ -81,9 +81,9 @@ Expected Output: 26
 
 * _Clone the repository or download the code files._
 * _Open the `index.html` file in a web browser._
-* _In the web browser, you will see an input field where you can enter a number. This number represents the maximum value for the range of numbers to be processed._
-* _Click the "ROBOGERFY IT!!" button to execute the Neighbor Function._
-* _The output will be displayed below the input field, showing the processed numbers based on the rules of the Neighbor Function._
+* _In the web browser, you will see an input field where you can pick you size of pizza and toppings_
+* _Click the "Total price" button to execute the callculate Function._
+* _The output will be displayed below the "total Price" button, showing the total cost of the pizza size and toppings selected._
 
 
 ## Known Bugs
