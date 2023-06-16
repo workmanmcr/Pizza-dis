@@ -1,0 +1,47 @@
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #263182;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.h1 {
+  text-align: center;
+  color: #000000;
+}
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #6b6de0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(197, 22, 22, 0.1);
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.select,
+input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+.button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}

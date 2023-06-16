@@ -4,11 +4,11 @@
   <title>Get a Pizza Dis</title>
 </head>
 <link rel="stylesheet" href="CSS/styles.css">
-<body>
-  <h1>Welcome to Get a Pizza Dis</h1>
+<body class="body">
+  <h1 class=" h1">Welcome! Get a Pizza Dis</h1>
   <p>We have a variety of sizes and toppings!</p>
   <h2>Sorry! Limit 1 pizza per customer</h2>
-  <h3>Prices!
+  <h3>Prices!</h3>
     <ul>Sizes:
       <li>Small Pie: $10</li>
       <li>Medium Pie: $15</li>
@@ -19,23 +19,25 @@
       <li>Pepperoni: $4</li>
       <li>Sausage: $6</li>
     </ul>
-  </h3>
-  <form id="pizza-form">
-    <label for="size">Pick your size</label>
-    <select id="size">
-      <option value="small">Small, I'm Not so Hungry.</option>
-      <option value="medium">Medium, I could eat.</option>
-      <option value="large">large, I'm starving!</option>
-    </select>
-    <ul>
-    <label for="toppings">Toppings</label>
-    <li><input type="checkbox" name="toppings" id="cheese">The Cheesyness!</li>
-    <li><input type="checkbox" name="toppings" id="pepperoni">Some of that pepperoni!</li>
-    <li><input type="checkbox" name="toppings" id="sausage"> All that sauasge!</li>
-</ul>
-<button type="submit">Total Price</button>
+  <form class="form" id="pizza-form">
+    <label class="label" for="size">Size:</label>
+    <ul><select class="select" id="size">
+      
+      <li><option value="small">Small</option></li>
+      <li><option value="medium">Medium</option></li>
+      <li><option value="large">Large</option></li>
+    </select></ul>
+    
+    <label for="toppings">Toppings:</label>
+    <input type="checkbox" name="toppings" value="cheese">Cheese
+    <input type="checkbox" name="toppings" value="pepperoni">Pepperoni
+    <input type="checkbox" name="toppings" value="sausage">Sausage
+    
+    <button class="button" type="submit">Calculate Total Cost</button>
   </form>
-  <div id="result"></div>
+  
+  <div class="result" id="result"></div>
+
   <script src="JS/scripts.js"></script>
 </body>
 </html>
